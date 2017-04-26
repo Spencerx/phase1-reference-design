@@ -142,6 +142,7 @@ int main(int argc, char **argv) {
             UHD_ERROR_LOG_LEVEL_FILE_ONLY, &uhd_error_log,
             rc.debug, rc.u4, rc.using_tun_tap, &ps, &app, rx_timer, rc.slow, rc.ofdma_tx_window, rc.mc_tx_window,
             rc.anti_jam, &rc);
+    std::cout << "Configuration constructor completed" << std::endl;
 
     // Precompute set of frequencies used in frequency hopping mode
     FreqTableGenerator ftg(rc.node_is_basestation, rc.normal_freq,
@@ -150,12 +151,14 @@ int main(int argc, char **argv) {
             rc.fh_prohibited_range_begin, rc.fh_prohibited_range_end,
             rhc.getFhWindowSmall(),  rhc.getFhWindowMedium(),
             rc.num_channels, rhc.isUhdRxTuningBugPresent(), rc.debug);
+    std::cout << "Frequency precompute completed" << std::endl;
 
     // Calculate timing parameters of transmit & receive operations 
     RadioScheduler rs(rc.node_is_basestation, rc.node_id, 
             rc.num_nodes_in_net, rc.nodes_in_net,  HEARTBEAT_ACTIVITY_PER_SCHEDULE, 
             rc.num_channels, rhc.getRxRateMeasured(), rhc.getTxRateMeasured(),
             rhc.getTxBurstLength(), rhc.getUhdRetuneDelay(), rc.debug, rc.u4, rc.uplink);
+    std::cout << "Scheduler completed" << std::endl;
 
     // This class handles interfacing between the physical and MAC (link layer)
     // as well as the overall MAC state variables
@@ -224,6 +227,7 @@ int main(int argc, char **argv) {
 
     if(rc.u4)
     {
+        std::cout << "U4 starts" << std::endl;
         rx_thread_args_t rx_thread_args;
         run_time = rc.run_time;
         elapsed_time = app.getElapsedTime();
@@ -233,6 +237,7 @@ int main(int argc, char **argv) {
         rx_thread_args.rhc_ptr = &rhc;
         if(!rc.node_is_basestation)
         {
+            std::cout << "Not a BS : creating thread..." << std::endl;
             thread_creation_status = pthread_create(&thread_id, &pthread_attr, run_ofdma_rx, (void*)&rx_thread_args);
             if(thread_creation_status != 0)
                 std::cout << "error creating rx thread" << std::endl;
@@ -240,10 +245,15 @@ int main(int argc, char **argv) {
         }
         else
         {
+            // FIXME : runtime error here
+            std::cout << "BS : creating thread..." << std::endl;
             thread_creation_status = pthread_create(&thread_id, &pthread_attr, run_mc_rx, (void*)&rx_thread_args);
             if(thread_creation_status != 0)
                 std::cout << "error creating rx thread" << std::endl;
             rx_task_thread = thread_id;
+            std::cout << "Wait begins..." << std::endl;
+            sleep(5);
+            std::cout << "Wait ends..." << std::endl;
 
         }
         timer_tic(rx_runtime);
@@ -251,9 +261,10 @@ int main(int argc, char **argv) {
         //Wait 1 second to let other nodes start their receivers before transmitting
         timer t1 = timer_create();
         timer_tic(t1);
-        while(timer_toc(t1) < 1.0);
+        //while(timer_toc(t1) < 1.0);
         timer_destroy(t1);
     }
+        std::cout << "Initialization complete. Press any key to send packets." << std::endl;
     unsigned int task_ctr;
     unsigned int num_scheduled_tasks;
     unsigned int batch_count = 0;

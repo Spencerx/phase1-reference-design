@@ -6,7 +6,7 @@
 
 CXX 				:= g++
 CXXFLAGS			:= -I./ -I../src_reusable/ -I/root/vt_radios/dependencies/liquid-usrp/ -I/root/vt_radios/dependencies/liquid-dsp -O2 -g3 -Wall -pedantic -ansi  -fPIC  -std=c++0x 
-LIBS				:= -lc -lconfig -lfftw3f -lliquid -lm -lpthread -luhd -lliquidusrp
+LIBS				:= -lc -lconfig -lfftw3f -lliquid -lm -lpthread -luhd -lliquidusrp -lboost_system
 LDFLAGS             := -L/opt/SDR/XSeries/lib
 RM				:= rm -f
 BINS				:= U4

@@ -899,11 +899,11 @@ void* doTxNoiseBurstTask(void* thread_args)
 
 void* run_mc_rx(void* thread_args)
 {
-    //std::cout << "started mc_rx" << std::endl;
     rx_thread_args_t* args;
     args = (rx_thread_args_t*)thread_args;
     RadioHardwareConfig* rhc_ptr = args->rhc_ptr;
-    const size_t max_samps_per_packet = rhc_ptr->usrp->get_device()->get_max_recv_samps_per_packet();
+    // const size_t max_samps_per_packet = rhc_ptr->usrp->get_device()->get_max_recv_samps_per_packet();
+    const size_t max_samps_per_packet = 10000;
     std::vector<std::complex<float> > rx_usrp_buffer(max_samps_per_packet);
 
     uhd_error_stats_t uhd_error_stats;
@@ -916,15 +916,17 @@ void* run_mc_rx(void* thread_args)
     timer t0 = timer_create();
     timer_tic(t0);
     double num_seconds = args->run_time;
+    std::cout << "started mc_rx" << std::endl;
     while (continue_running) 
     {
-        // grab data from device
+        // grab data from device FIXME : runtime error
         size_t uhd_num_delivered_samples = rhc_ptr->usrp->get_device()->recv(
                 &rx_usrp_buffer.front(), rx_usrp_buffer.size(), rx_md,
                 uhd::io_type_t::COMPLEX_FLOAT32,
                 uhd::device::RECV_MODE_ONE_PACKET
                 );
-        //std::cout << "grabbed " << uhd_num_delivered_samples << " samples" << std::endl;
+        std::cout << "started mc_rx" << std::endl;
+        std::cout << "grabbed " << uhd_num_delivered_samples << " samples" << std::endl;
 
         // Check for UHD errors
         switch(rx_md.error_code) {
@@ -994,6 +996,7 @@ void* run_mc_rx(void* thread_args)
 
 void* run_ofdma_rx(void* thread_args)
 {
+    std::cout << "started ofdm_rx" << std::endl;
     rx_thread_args_t* args;
     args = (rx_thread_args_t*)thread_args;
     RadioHardwareConfig* rhc_ptr = args->rhc_ptr;
@@ -1003,7 +1006,8 @@ void* run_ofdma_rx(void* thread_args)
     msresamp_crcf_reset(rhc_ptr->rx_resamp);
     firfilt_crcf_reset(rhc_ptr->rx_prefilt);
     //ofdmflexframesync_print(sync);
-    const size_t max_samps_per_packet = rhc_ptr->usrp->get_device()->get_max_recv_samps_per_packet();
+    // const size_t max_samps_per_packet = rhc_ptr->usrp->get_device()->get_max_recv_samps_per_packet();
+    const size_t max_samps_per_packet = 10000;
     std::vector<std::complex<float> > rx_usrp_buffer(20*max_samps_per_packet);
     std::complex<float> rx_temp_resample_buf[(int)(2.0f/rhc_ptr->rx_resamp_rate) + 64];
 

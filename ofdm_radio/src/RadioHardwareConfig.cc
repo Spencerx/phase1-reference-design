@@ -520,6 +520,7 @@ RadioHardwareConfig::RadioHardwareConfig(
     } else {
         if(usrp_address_name != "")
         dev_addr["addr0"] = usrp_address_name;
+        dev_addr["type"] = "x300";
     }
     try {
         usrp = uhd::usrp::multi_usrp::make(dev_addr);
@@ -556,7 +557,7 @@ RadioHardwareConfig::RadioHardwareConfig(
     // methods that actually perform burst tx & rx
 
     // Create rx streamer object for burst receiption
-    uhd::stream_args_t rx_stream_args("fc32"); //complex floats
+    uhd::stream_args_t rx_stream_args("fc32","sc16"); //complex floats
     rx_stream = usrp->get_rx_stream(rx_stream_args); 
     rx_uhd_transport_size = rx_stream->get_max_num_samps();
     rx_uhd_max_buffer_size = rx_uhd_transport_size +64;
@@ -632,12 +633,14 @@ RadioHardwareConfig::RadioHardwareConfig(
     {
         usrp->set_tx_rate(RHC_NOMINAL_RESAMPLER_RATIO * sample_rate);
         usrp_tx_rate = usrp->get_tx_rate();
+        std::cout << "Tx rate set to " << usrp_tx_rate << std::endl;
         tx_resamp_rate = usrp_tx_rate / sample_rate;
     }
     else
     {
         usrp->set_tx_rate(RHC_NOMINAL_RESAMPLER_RATIO * sample_rate);
         usrp_tx_rate = usrp->get_tx_rate();
+        std::cout << "Tx rate set to " << usrp_tx_rate << std::endl;
         tx_resamp_rate = usrp_tx_rate / sample_rate;
     }
 
@@ -646,7 +649,8 @@ RadioHardwareConfig::RadioHardwareConfig(
     // methods that actually perform burst tx & rx
 
     // Create tx streamer object for burst transmissions
-    uhd::stream_args_t tx_stream_args("fc32");
+    uhd::stream_args_t tx_stream_args("fc32", "sc16");
+    //tx_stream_args.args["block_id0"]="0/DmaFIFO_0";
     tx_stream = usrp->get_tx_stream(tx_stream_args);
 
     // Using this constant in transport size makes a whole number of transfers;
@@ -745,6 +749,7 @@ RadioHardwareConfig::RadioHardwareConfig(
     }
 
 
+    std::cout << "Setting clock" <<  std::endl << std::endl;;
     // Establish choice of USRP hardware clock
     switch (clock_ref_type) {
         case CLOCK_REF_GPSDO :
@@ -785,6 +790,7 @@ RadioHardwareConfig::RadioHardwareConfig(
             break;
     }
 
+    std::cout << "Get ref clock" <<  std::endl << std::endl;;
     uhd::sensor_value_t ref_locked = usrp->get_mboard_sensor("ref_locked", 0);
     if ( ref_locked.to_bool() ) {
         // Silent if everything working
@@ -794,6 +800,7 @@ RadioHardwareConfig::RadioHardwareConfig(
     }
 
     // Calibration of receiver noise on normal frequency for idle channel
+    std::cout << "Heartbeat" <<  std::endl << std::endl;;
     rxHeartbeatCalibration( (getHardwareTimestamp() +0.01), initial_rx_recommended_sample_size);
 
     // Check for presence of a bug in UHD's manual tuning mode within the receive side
@@ -805,6 +812,7 @@ RadioHardwareConfig::RadioHardwareConfig(
         cout << "       Probe trying to tune to 2.405e9 +1.0e6 = 2.406 GHz . . . "<<endl;
     }
 #endif
+    std::cout << "Rx setting ..." <<  std::endl << std::endl;;
     rx_tune_req.rf_freq = 2.405e9;  
     rx_tune_req.rf_freq_policy = uhd::tune_request_t::POLICY_MANUAL;
     rx_tune_req.dsp_freq = 1.0e6;   
@@ -828,6 +836,7 @@ RadioHardwareConfig::RadioHardwareConfig(
     }
 #endif
 
+    std::cout << "Tune to normal freq" <<  std::endl << std::endl;;
     tune2NormalFreq();
 
     // Initialize RadioHardwareConfig debug tools
@@ -835,6 +844,7 @@ RadioHardwareConfig::RadioHardwareConfig(
     initUhdErrorLog(uhd_error_log_level);
 
     ext_rhc_ptr = this;
+    std::cout << "Hardware configuration is done" <<  std::endl << std::endl;;
 
 }
 //////////////////////////////////////////////////////////////////////////

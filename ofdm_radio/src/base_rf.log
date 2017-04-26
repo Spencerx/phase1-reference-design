@@ -1,0 +1,913 @@
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
+% RF Event Log
+% 
+% The column fields from left to right are:
+%   1: radio hardware's timestamp of event
+%   2: integer code for type of RF event:
+%      0: TX_HEARTBEAT, 1: TX_DATA, 2: RX_HEARTBEAT, 3: RX_DATA
+%      4: TX_MC_DATA, 5: TX_OFDMA_DATA, 6: RX_MC_DATA, 7: RX_OFDMA_DATA
+%      8: TX_CONTROL_DATA, 9: RX_CONTROL_DATA
+%   3: center frequency
+%   4: bandwidth
+%  
