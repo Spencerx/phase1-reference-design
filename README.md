@@ -57,7 +57,7 @@ make
 
 OFDM Reference Design Usage Notes:
 -Make sure to modify the example config files in ofdm_radio/src/config_files to use the correct USRP IP addresses (key: usrp_address_name)
--Run the radio by executing: ./ofdm_reference --config-file /path/to/config/
+-Run the radio by executing: ./U4 --config-file /path/to/config/
 -The radio is designed to run with a 10 MHz reference with PPS which can be provided by a benchtop reference or the Ettus GPSDO. It will work with no reference, but performance will be degraded
 -Generally, gain values should be low (0-10.0 range)
 
