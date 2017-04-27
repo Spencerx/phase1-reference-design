@@ -247,10 +247,10 @@ int main(int argc, char **argv) {
         {
             // FIXME : runtime error here
             std::cout << "BS : creating thread..." << std::endl;
-            thread_creation_status = pthread_create(&thread_id, &pthread_attr, run_mc_rx, (void*)&rx_thread_args);
-            if(thread_creation_status != 0)
-                std::cout << "error creating rx thread" << std::endl;
-            rx_task_thread = thread_id;
+            // thread_creation_status = pthread_create(&thread_id, &pthread_attr, run_mc_rx, (void*)&rx_thread_args);
+            // if(thread_creation_status != 0)
+            //     std::cout << "error creating rx thread" << std::endl;
+            // rx_task_thread = thread_id;
             std::cout << "Wait begins..." << std::endl;
             sleep(5);
             std::cout << "Wait ends..." << std::endl;

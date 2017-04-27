@@ -906,21 +906,28 @@ void* run_mc_rx(void* thread_args)
     const size_t max_samps_per_packet = 10000;
     std::vector<std::complex<float> > rx_usrp_buffer(max_samps_per_packet);
 
+    // XXX : Solution for new UHD/ create streamer -- Does not work
+    uhd::stream_args_t stream_args("fc32","sc16");
+    uhd::rx_streamer::sptr rx_stream = rhc_ptr->usrp->get_rx_stream(stream_args);
+
     uhd_error_stats_t uhd_error_stats;
     uhd::rx_metadata_t rx_md;
     unsigned int rx_uhd_recv_ctr = 0;
     uhd::stream_cmd_t stream_cmd(uhd::stream_cmd_t::STREAM_MODE_START_CONTINUOUS);
     stream_cmd.stream_now = true;
-    rhc_ptr->usrp->issue_stream_cmd(stream_cmd);
+
+    // rhc_ptr->usrp->issue_stream_cmd(stream_cmd);
+    std::cout << "started mc_rx" << std::endl;
+    rx_stream->issue_stream_cmd(stream_cmd);
     int continue_running = 1;
     timer t0 = timer_create();
     timer_tic(t0);
     double num_seconds = args->run_time;
-    std::cout << "started mc_rx" << std::endl;
     while (continue_running) 
     {
         // grab data from device FIXME : runtime error
-        size_t uhd_num_delivered_samples = rhc_ptr->usrp->get_device()->recv(
+        // size_t uhd_num_delivered_samples = rhc_ptr->usrp->get_device()->recv(
+        size_t uhd_num_delivered_samples = rx_stream->recv(
                 &rx_usrp_buffer.front(), rx_usrp_buffer.size(), rx_md,
                 uhd::io_type_t::COMPLEX_FLOAT32,
                 uhd::device::RECV_MODE_ONE_PACKET

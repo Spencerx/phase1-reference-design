@@ -151,3 +151,127 @@
 6.123614e+00    AppManager: Application initialization complete.
 5.000000e-06    AppManager: Application log started.
 5.982398e+00    AppManager: Application initialization complete.
+4.000000e-06    AppManager: Application log started.
+5.895191e+00    AppManager: Application initialization complete.
+5.000000e-06    AppManager: Application log started.
+5.607302e+00    AppManager: Application initialization complete.
+4.000000e-06    AppManager: Application log started.
+6.203860e+00    AppManager: Application initialization complete.
+4.000000e-06    AppManager: Application log started.
+6.091158e+00    AppManager: Application initialization complete.
+5.000000e-06    AppManager: Application log started.
+6.235818e+00    AppManager: Application initialization complete.
+4.000000e-06    AppManager: Application log started.
+6.326395e+00    AppManager: Application initialization complete.
+4.000000e-06    AppManager: Application log started.
+6.275453e+00    AppManager: Application initialization complete.
+4.000000e-06    AppManager: Application log started.
+6.237634e+00    AppManager: Application initialization complete.
+1.236072e+01    AppManager: Application completed scheduled tasks in batch: 0
+1.348071e+01    AppManager: Application completed scheduled tasks in batch: 1
+1.460070e+01    AppManager: Application completed scheduled tasks in batch: 2
+1.572068e+01    AppManager: Application completed scheduled tasks in batch: 3
+1.684067e+01    AppManager: Application completed scheduled tasks in batch: 4
+1.796065e+01    AppManager: Application completed scheduled tasks in batch: 5
+1.908064e+01    AppManager: Application completed scheduled tasks in batch: 6
+2.020060e+01    AppManager: Application completed scheduled tasks in batch: 7
+2.132060e+01    AppManager: Application completed scheduled tasks in batch: 8
+2.244057e+01    AppManager: Application completed scheduled tasks in batch: 9
+2.356056e+01    AppManager: Application completed scheduled tasks in batch: 10
+2.468054e+01    AppManager: Application completed scheduled tasks in batch: 11
+2.580053e+01    AppManager: Application completed scheduled tasks in batch: 12
+2.692048e+01    AppManager: Application completed scheduled tasks in batch: 13
+2.804046e+01    AppManager: Application completed scheduled tasks in batch: 14
+2.916046e+01    AppManager: Application completed scheduled tasks in batch: 15
+3.028045e+01    AppManager: Application completed scheduled tasks in batch: 16
+3.140043e+01    AppManager: Application completed scheduled tasks in batch: 17
+3.252041e+01    AppManager: Application completed scheduled tasks in batch: 18
+3.364038e+01    AppManager: Application completed scheduled tasks in batch: 19
+3.476038e+01    AppManager: Application completed scheduled tasks in batch: 20
+3.588034e+01    AppManager: Application completed scheduled tasks in batch: 21
+3.700035e+01    AppManager: Application completed scheduled tasks in batch: 22
+3.812032e+01    AppManager: Application completed scheduled tasks in batch: 23
+3.924031e+01    AppManager: Application completed scheduled tasks in batch: 24
+4.036028e+01    AppManager: Application completed scheduled tasks in batch: 25
+4.148027e+01    AppManager: Application completed scheduled tasks in batch: 26
+4.260025e+01    AppManager: Application completed scheduled tasks in batch: 27
+4.372023e+01    AppManager: Application completed scheduled tasks in batch: 28
+4.484021e+01    AppManager: Application completed scheduled tasks in batch: 29
+4.596021e+01    AppManager: Application completed scheduled tasks in batch: 30
+4.708017e+01    AppManager: Application completed scheduled tasks in batch: 31
+4.820017e+01    AppManager: Application completed scheduled tasks in batch: 32
+4.932011e+01    AppManager: Application completed scheduled tasks in batch: 33
+5.044013e+01    AppManager: Application completed scheduled tasks in batch: 34
+5.156011e+01    AppManager: Application completed scheduled tasks in batch: 35
+5.268008e+01    AppManager: Application completed scheduled tasks in batch: 36
+5.380007e+01    AppManager: Application completed scheduled tasks in batch: 37
+5.492005e+01    AppManager: Application completed scheduled tasks in batch: 38
+5.604001e+01    AppManager: Application completed scheduled tasks in batch: 39
+5.716001e+01    AppManager: Application completed scheduled tasks in batch: 40
+5.828001e+01    AppManager: Application completed scheduled tasks in batch: 41
+5.939998e+01    AppManager: Application completed scheduled tasks in batch: 42
+6.051996e+01    AppManager: Application completed scheduled tasks in batch: 43
+6.163995e+01    AppManager: Application completed scheduled tasks in batch: 44
+6.275994e+01    AppManager: Application completed scheduled tasks in batch: 45
+6.387990e+01    AppManager: Application completed scheduled tasks in batch: 46
+6.499989e+01    AppManager: Application completed scheduled tasks in batch: 47
+6.611988e+01    AppManager: Application completed scheduled tasks in batch: 48
+6.723985e+01    AppManager: Application completed scheduled tasks in batch: 49
+6.835990e+01    AppManager: Application completed scheduled tasks in batch: 50
+6.947981e+01    AppManager: Application completed scheduled tasks in batch: 51
+7.059981e+01    AppManager: Application completed scheduled tasks in batch: 52
+7.171982e+01    AppManager: Application completed scheduled tasks in batch: 53
+7.283981e+01    AppManager: Application completed scheduled tasks in batch: 54
+7.395980e+01    AppManager: Application completed scheduled tasks in batch: 55
+7.507979e+01    AppManager: Application completed scheduled tasks in batch: 56
+7.619975e+01    AppManager: Application completed scheduled tasks in batch: 57
+7.731973e+01    AppManager: Application completed scheduled tasks in batch: 58
+7.843966e+01    AppManager: Application completed scheduled tasks in batch: 59
+7.955965e+01    AppManager: Application completed scheduled tasks in batch: 60
+8.067964e+01    AppManager: Application completed scheduled tasks in batch: 61
+8.179962e+01    AppManager: Application completed scheduled tasks in batch: 62
+8.291962e+01    AppManager: Application completed scheduled tasks in batch: 63
+8.403958e+01    AppManager: Application completed scheduled tasks in batch: 64
+8.515958e+01    AppManager: Application completed scheduled tasks in batch: 65
+8.627956e+01    AppManager: Application completed scheduled tasks in batch: 66
+8.739953e+01    AppManager: Application completed scheduled tasks in batch: 67
+8.851952e+01    AppManager: Application completed scheduled tasks in batch: 68
+8.963949e+01    AppManager: Application completed scheduled tasks in batch: 69
+9.075948e+01    AppManager: Application completed scheduled tasks in batch: 70
+9.187946e+01    AppManager: Application completed scheduled tasks in batch: 71
+9.299944e+01    AppManager: Application completed scheduled tasks in batch: 72
+9.411942e+01    AppManager: Application completed scheduled tasks in batch: 73
+9.523940e+01    AppManager: Application completed scheduled tasks in batch: 74
+9.635940e+01    AppManager: Application completed scheduled tasks in batch: 75
+9.747937e+01    AppManager: Application completed scheduled tasks in batch: 76
+9.859934e+01    AppManager: Application completed scheduled tasks in batch: 77
+9.971933e+01    AppManager: Application completed scheduled tasks in batch: 78
+1.008393e+02    AppManager: Application completed scheduled tasks in batch: 79
+1.019593e+02    AppManager: Application completed scheduled tasks in batch: 80
+1.030793e+02    AppManager: Application completed scheduled tasks in batch: 81
+1.041993e+02    AppManager: Application completed scheduled tasks in batch: 82
+1.053193e+02    AppManager: Application completed scheduled tasks in batch: 83
+1.064392e+02    AppManager: Application completed scheduled tasks in batch: 84
+1.075592e+02    AppManager: Application completed scheduled tasks in batch: 85
+1.086792e+02    AppManager: Application completed scheduled tasks in batch: 86
+1.097992e+02    AppManager: Application completed scheduled tasks in batch: 87
+1.109191e+02    AppManager: Application completed scheduled tasks in batch: 88
+1.120391e+02    AppManager: Application completed scheduled tasks in batch: 89
+1.131591e+02    AppManager: Application completed scheduled tasks in batch: 90
+1.142791e+02    AppManager: Application completed scheduled tasks in batch: 91
+1.153991e+02    AppManager: Application completed scheduled tasks in batch: 92
+1.165190e+02    AppManager: Application completed scheduled tasks in batch: 93
+1.176390e+02    AppManager: Application completed scheduled tasks in batch: 94
+1.187590e+02    AppManager: Application completed scheduled tasks in batch: 95
+1.198790e+02    AppManager: Application completed scheduled tasks in batch: 96
+1.209990e+02    AppManager: Application completed scheduled tasks in batch: 97
+1.221190e+02    AppManager: Application completed scheduled tasks in batch: 98
+1.232389e+02    AppManager: Application completed scheduled tasks in batch: 99
+1.243589e+02    AppManager: Application completed scheduled tasks in batch: 100
+1.254789e+02    AppManager: Application completed scheduled tasks in batch: 101
+1.265989e+02    AppManager: Application completed scheduled tasks in batch: 102
+1.277189e+02    AppManager: Application completed scheduled tasks in batch: 103
+1.288389e+02    AppManager: Application completed scheduled tasks in batch: 104
+1.299588e+02    AppManager: Application completed scheduled tasks in batch: 105
+1.299590e+02    AppManager: Application reached end of user-specified run conditions.
+1.299591e+02    AppManager: Application finalized and terminating normally.
